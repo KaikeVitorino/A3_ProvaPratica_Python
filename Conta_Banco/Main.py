@@ -1,0 +1,3 @@
+from MenuUtil import *
+
+main()
