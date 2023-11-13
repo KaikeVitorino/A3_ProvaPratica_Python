@@ -22,17 +22,14 @@ def menu_2(escolha1):
     saldo = float()
     n_conta = random.randint(100000000, 999999999)
 
-    cliente = Cliente(nome, cpf)
     conta = Conta(Cliente, Historico, n_conta, saldo)
-    historico = Historico()
 
     if escolha1 == 'a':
         escolha = escolha1
         return escolha
 
     else:
-        conta.printar_arq_conta()
-
+        conta.ler_procurar_arq_conta()
         print(f"1) Ver infos dos clientes\n"
               f"2) Ver infos das contas dos clientes\n"
               f"3) Depositar\n"

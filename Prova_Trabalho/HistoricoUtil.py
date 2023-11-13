@@ -99,3 +99,45 @@ class Conta(Cliente):
         l = f.readlines()
         print(f"{l}\n")
 
+    def ler_procurar_arq_conta(self):
+        f = open('Contas.txt', 'r')
+        print('=====| Lista das contas |=====')
+        l = f.readlines()
+        print(f"{l}\n")
+
+        for linha in l:
+            # Quebrar a linha em palavras
+            palavras = linha.split()
+
+            nome = palavras[1]
+
+            # Ler as informações da conta
+            nome = palavras[1]
+            cpf = palavras[3]
+            numero_da_conta = palavras[5]
+            saldo_da_conta = float(palavras[7])
+
+            # Criar um dicionário para armazenar o valor das variáveis
+            dados = {
+                'nome': nome,
+                'cpf': cpf,
+                'numero_da_conta': numero_da_conta,
+                'saldo_da_conta': saldo_da_conta
+            }
+
+            # Adicione um input do usuario para ele digitar o nome a ser procurado os dados
+            nome_a_ser_procurado = input("Digite o nome do titular da conta: ")
+
+            # Procurar o nome nos dados
+            for dado in dados:
+                if dado["nome"] == nome_a_ser_procurado:
+                    nome = dado['nome']
+                    print(f"CPF: {dado['cpf']}")
+                    print(f"Numero da conta: {dado['numero_da_conta']}")
+                    print(f"Saldo da conta: {dado['saldo_da_conta']}")
+                    break
+            else:
+                print("Nome não encontrado.")
+
+        return nome, cpf,
+
