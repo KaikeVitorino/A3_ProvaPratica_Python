@@ -1,3 +1,3 @@
 from MenuUtil import *
 
-main()
+menu()
