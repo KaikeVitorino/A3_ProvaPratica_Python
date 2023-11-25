@@ -1,6 +1,11 @@
 import datetime
 import json
 
+'''
+    Modulo com as classes Historico, Cliente e Conta
+            E suas respectivas funcoes
+'''
+
 class Historico:
     def __init__(self):
         # Inicializa o historico com a data de abertura e uma lista vazia de transacoes

@@ -1,6 +1,10 @@
 from HistoricoUtil import *
 import random
-
+'''
+    Modulo onde se tem a func do menu, q eh a principal
+        Aqui se aplica logica às classes criadas no outro modulo e ao Menu criado aqui
+            A funcao junta os dois fazendo o programa funcionar
+'''
 # Func que da o menu - a principal
 def menu():
     while True:
