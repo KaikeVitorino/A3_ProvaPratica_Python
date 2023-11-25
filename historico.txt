@@ -1,1 +1,4 @@
 Transferencia da conta 52153 no valor de 100.0 para conta 77721. 2023-11-24 17:59:42.383397
+Deposito de 12.0 na conta numero 78984. 2023-11-24 18:12:07.119921
+Saque de 12.0 da conta numero 78984. 2023-11-24 18:12:11.066051
+Transferencia da conta 52153 no valor de 12.0 para conta 78984. 2023-11-24 18:12:28.821907
