@@ -13,12 +13,12 @@ class Historico:
         self.transacoes = []
 
     def imprime(self):
-        # Imprime o conteudo do historico lido do arquivo 'historico.txt'
+        # Imprime o conteudo do historico lido do arquivo historico.txt
         with open('historico.txt', 'r') as f:
             print(f.read())
 
     def gravaHistorico(self, transacao):
-        # Grava a transacao no arquivo 'historico.txt' e adiciona à lista de transacoes
+        # Grava a transacao no arquivo do historico.txt e adiciona na lista de transacoes
         with open('historico.txt', 'a') as arq:
             arq.write(transacao + '\n')
         print("Gravado no historico!!")
